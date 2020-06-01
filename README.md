@@ -14,7 +14,7 @@ websocket.server是基于netty实现的websocket协议的服务器软件。
   ```
   
   2 发送消息
-  ```
+  ```javascript
   msg = {
     "type": "SEND_MSG",
     "topic": "topic1",
@@ -22,7 +22,8 @@ websocket.server是基于netty实现的websocket协议的服务器软件。
       "title": :"hello world"
     }
   }
-  
+   ```
+   
   3 订阅消息
   ```javascript
   msg = {
