@@ -32,6 +32,9 @@ public class AdminDispatcher {
      */
     public static boolean subTopic(String topic, String channelId) {
         CopyOnWriteArrayList<String> list = topicMap.get(topic);
+        if(null == list) {
+            return false;
+        }
         return list.add(channelId);
     }
 
